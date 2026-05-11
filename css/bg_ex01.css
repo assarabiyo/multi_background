@@ -1,0 +1,38 @@
+@import url(reset.css);
+#container{
+    width: 2000px;
+    display: flex;
+    margin: 100px auto;
+    gap: 20px;
+    justify-content: center;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #222;
+    background: url(../images/bg4.jpg) no-repeat;
+}
+#bg1{
+    /* 원래 배경 이미지로 크기 표시 */
+    background-size: auto;
+}
+#bg2{
+    /* 너비는 200px 높이는 자동 계산 */
+background-size: 200px;
+}
+
+#bg3{
+    background-size: 80%;
+}
+
+#bg4{
+    background-size: 100% 100%;
+}
+#bg5{
+    /* 요소 안에 배경 이미지가 다 보이도록 표시 */
+    background-size: contain;
+}
+#bg6{
+    /* 요소를 완전히 덮도록 배경 이미지 표시 */
+    background-size: cover;
+}
